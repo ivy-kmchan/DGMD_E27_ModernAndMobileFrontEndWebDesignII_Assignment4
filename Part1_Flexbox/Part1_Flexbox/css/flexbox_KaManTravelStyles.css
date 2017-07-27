@@ -1,0 +1,269 @@
+/* This flexbox_KaManTravelStyles.css is for Flexbox | KaManTravel website, including index.html*/
+/* All the photos were taken by me.
+
+/* Border box declaration */
+html {
+  box-sizing: border-box;
+}
+/* inherit border-box on all elements in the universe and before and after */
+*, 
+*:before, 
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+	font-family: Arial, Geneva, sans-serif;
+	background-color: #9b009b;
+	font-size: 100%;
+}
+
+/* From "http://typecast.com/images/uploads/modernscale.css". Even though some tags are not in the htmls, they may appear in future additional htmls. */
+body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2, h3, h4, h5, h6 {
+  font-size-adjust: 0.5;
+}
+
+h1 {
+	font-family: 'Luckiest Guy', cursive; /* Google Fonts */
+	font-weight: normal;
+}
+
+h2, h3, h4, h5, h6{
+	font-family: 'Amita', cursive; /* Google Fonts */
+	font-weight: normal;
+}
+
+a {
+	color: #2772B0;
+}
+
+.wrapper {
+	width: 97%;
+	max-width: 1200px;
+	margin: 0 auto;
+	float: none;
+	background-color: #fff;
+	padding: 0 1em;
+}
+
+nav {
+	background-color: #9298CC;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	overflow: auto;
+}
+nav ul li {
+	font-family: 'Halant', "Times New Roman", Times, serif; /* 'Halant' is Google Fonts */
+	font-size: 1.2em;
+	display: inline;
+}
+
+nav ul a {
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 1em;
+	float: left;
+	display: inline-block;
+}
+
+nav ul a:hover {
+	color: orange;
+	background-color: black;
+}
+
+div.col-1-2 img{
+	max-width: 225px;
+	width: 100%;
+}
+
+footer {
+	clear: both;
+	padding: 2em 0;
+	margin: 3em 0;
+	color: maroon;
+	text-align: center;
+}
+
+
+/* Flexbox Grid System */
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  flex: 0 1 auto;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem; 
+}
+[class*="col"] {
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.col-1-2,
+.col-1-4 {
+  background-color: #ffc;
+}
+/*.col-2 {
+  background-color: #ccf;
+}
+.col-3 {
+  background-color: #fcf;
+}*/
+.col-4 {
+  background-color: #9298CC;
+}
+
+/* Media Queries */
+/* SMALL Screen Width*/
+@media only screen and (max-width: 550px) {
+	header{
+		background: url(../img/pacifica_shoreline_710.jpg) no-repeat; /* swap header background image. */
+		width: 100%;
+		height: 130px ;
+	}
+
+	header h1 {
+		padding: 80px 0 0 15px;
+		margin: 0;
+		font-size: 2.4em;
+	}
+
+	header h1 a {
+		color: #fff;
+		text-decoration: none;
+	}
+
+	/* make nav ul a to be big like a big button for clicking. good for small screen width. */
+	nav ul a {
+		display: block;
+		float: none;
+		padding-left:3.333333%;
+	}
+
+	/* splits nav into 2 columns */
+	nav li:nth-child(even) {
+		width: 50%;
+		float: right;
+	}
+
+	nav li:nth-child(odd) {
+		width: 50%;
+		float: left;
+	}
+
+	nav ul li{
+		font-size: 1.1em;
+	}
+
+	.col-1-2 h2 {
+ 		font-size: 1.5em ;
+ 		line-height: 1.5;
+ 	}
+
+	.col-1-2 p {
+		font-size: 1.05em; 
+		line-height: 1.3;
+	}
+}
+
+/* MEDIUM Screen Width */
+@media only screen and (min-width: 550px) {
+	/*Flexbox Grid System*/
+	.col-1-2 {
+	  flex: 0 0 50%;
+	  max-width: 50%;
+	}
+
+	header {
+		background: url(../img/pacifica_shoreline_1200.jpg) no-repeat; 
+		width: 100%;
+		height: 200px;
+	}
+
+	header h1 {
+		padding: 130px 0 0 15px;
+		margin: 0;
+		font-size: 2.9em;
+	}
+
+	header h1 a {
+		color: #fff;
+		text-decoration: none;
+	}
+
+	.col-1-2 h2 {
+ 		font-size: 1.65em ;
+ 		line-height: 1.6;
+ 	}
+
+	.col-1-2 p {
+		font-size: 1.05em; 
+		line-height: 1.35;
+	}
+}
+
+/* LARGE Screen Width*/
+@media only screen and (min-width: 900px) {
+	/*Flexbox Grid System*/
+	.col-1-2,
+	.col-1-4 {
+	  flex: 0 0 25%;
+	  max-width: 25%;
+	}
+
+	header {
+		background: url(../img/pacifica_shoreline_1200.jpg) no-repeat; /* swap header background image. */
+		width: 1200px;
+		height: 218px;
+		color: #fff;
+		font-size: 1.6em;
+	}
+
+	header h1 {
+		padding: 0.5em;
+		margin: 0;
+		font-size: 2.5em;
+	}
+
+	header h1 a {
+		color: #fff;
+		text-decoration: none;
+	}
+
+	.col-1-2 h2 {
+ 		font-size: 1.7em ;
+ 		line-height: 1.7;
+ 	}
+
+	.col-1-2 p {
+		font-size: 1.1em; 
+		line-height: 1.4;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

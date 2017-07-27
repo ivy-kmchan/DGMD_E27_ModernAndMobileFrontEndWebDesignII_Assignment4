@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>CSS4 Grids | KA MAN TRAVEL</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"><!--this is for responsive design -->
+	<link href='https://fonts.googleapis.com/css?family=Luckiest+Guy' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Amita:700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Halant:700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/CSS4Grids_KaManTravelStyles.css">
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<h1><a href="index.html">KA MAN TRAVEL</a></h1>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+			</ul>
+		</nav>
+		<article>
+			<!-- Responsive image with Picturefill(polyfill). -->
+			<picture>
+			<!-- polyfill -->
+			<!--[if IE 9]><video style="display: none;"><![endif]-->
+			<source srcset="img/aeroplane_400_300.jpg" media="(min-width:
+			1014px) ">
+			<source srcset="img/aeroplane_300_200.jpg" media="(min-width: 702px)
+			and (max-width: 1013px) ">
+			<!--[if IE 9]></video><![endif]-->
+			<img srcset="img/aeroplane_250_150.jpg" src="img/aeroplane_250_150.jpg" alt="Welcome to Ka Man Travel"> 
+			<!-- html5 validation invalidated the html document if the src attribute is missing in <img> tag. Hence, src attribute must be added. The code snippet is from Polyfill. -->
+			</picture>
+			<h2>About Our Travel</h2>
+            <p>We LOVE Travel!</p>
+			<p>My husband and I love to bring our kids to places. We want them to go see the big world, so they know that there are many people living in many different places. We want them to realize and respect other people by going to countries and experiencing the distinct cultures.</p>
+			<p>In the last few years, we went to some Asian cities including Tokyo in Japan, Taipei in Taiwan, Seoul in Korea, and Macau in China. People in each of these places speak different languages, have special living habits, believe in different religions, etc. We visited different places and we want the kids to understand that there is no better or worse; they are just different.</p>
+			<p>In this website, I want to show you the countries that we visited. All of these cities have the extremely convenient transporation systems, and tourists like us can go visit many sightseeing points by taking buses, taxis and trains. The city plannings are very unique; they are full of skyscrapers as well as the traditional architectures. Besides, the food in these places are very yummy too. We want to show you what we saw, what we ate, and what we came across.</p>
+			<p>Have FUN Travel!</p>
+		</article>
+		<aside>
+			<h3>Places where we visited:</h3>
+			<ul>
+				<li>Tokyo, Japan</li>
+		        <li>Taipei, Taiwan</li>
+		        <li>Seoul, South Korea</li>
+		        <li>Macau, China</li>
+	        </ul>
+	       	<h3>Places where we plan to go:</h3>
+			<ul>
+				<li>Singapore, Singapore</li>
+		        <li>Bangkok, Thailand</li>
+		        <li>Hanon, Vietnam</li>
+	        </ul>
+		</aside>
+	    <footer>
+	    	<p>&copy; CSS4 Grids | 2017 Ka Man Travel. All rights reserved.</p>
+	    </footer>
+    </div>
+</body>
+</html>

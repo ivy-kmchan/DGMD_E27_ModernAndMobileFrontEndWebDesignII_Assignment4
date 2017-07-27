@@ -1,0 +1,57 @@
+Name: Ka Man Chan
+Class: DGMD E-27
+Assignment: 4
+
+Part 1: Flexbox
+	- URL for the Flexbox web page:
+		http://kamanc.siteground.net/DGMD_E27_Assignment4/Part1_Flexbox/Part1_Flexbox/index.html
+
+	- The browser and OS pair that I work with for this part:
+		Firefox/PC
+
+	- Flexbox portion in CSS:
+		Starting line numbers: 93, 176, 212
+
+	- Screenshot of Flexbox Defense:
+		Filename: flexbox_defense_last_page_KaManChan.docx 
+		It is attached as a comment in Canvas.
+
+
+Part 2: CSS4 Grids
+	- URLs for the CSS4 Grids: 
+		http://kamanc.siteground.net/DGMD_E27_Assignment4/Part2_CSS4Grids/index.html &
+		http://kamanc.siteground.net/DGMD_E27_Assignment4/Part2_CSS4Grids/about.html
+
+	- The browser and OS pair that I work with for this part:
+		Chrome/PC
+
+	- Grid reordering:
+		HTML - http://kamanc.siteground.net/DGMD_E27_Assignment4/Part2_CSS4Grids/about.html
+		CSS - line 282 & 288 and 316 & 322
+
+
+Part 3: CSS Animation and SVG:
+	- URL for the CSS Animation and SVG:
+		http://kamanc.siteground.net/DGMD_E27_Assignment4/Part2_CSS4Grids/index.html
+
+	- The browser and OS pair that I work with for this part:
+		Chrome/PC
+
+	- 3D transformation:
+		Starting line number in index.html: 30
+		Starting line number in CSS4Grids_KaManTravelStyles.css: 125 & 52 (perspective)
+
+	- 1 second transition:
+		Starting line number in index.html: 38
+		Starting line number in CSS4Grids_KaManTravelStyles.css: 136
+
+	- @keyframe animation:
+		Starting line number in index.html: 46
+		Starting line number in CSS4Grids_KaManTravelStyles.css: 148
+
+	- Manipulation of one internal element of an SVG element on hover:
+		Starting line number in index.html: 54
+		Starting line number in CSS4Grids_KaManTravelStyles.css: 170
+
+
+

@@ -1,0 +1,92 @@
+/* This is for index.html for the clover css animation. */
+.wrapper {
+	/*margin-top: 1em;
+    text-align: center;*/
+
+    margin: 2em auto 2em auto;
+    width:80%;
+    position:relative;
+
+    /* applying perspective for 3D transform. */
+	perspective: 1000px;
+}
+
+/* clover 1 */
+#clover1 {
+    margin: 0 auto;
+    height: 100px;
+
+    transform: translate3d(200px,200px,-200px);
+    /*transform: rotateY(10deg);*/
+    transform: rotateX(25deg);  
+}
+
+/* clover 2 */
+#clover2{
+	margin: 0 auto;
+    height: 100px;
+
+	transition: 1s;
+}
+
+#clover2:hover {
+    transform: scale(0.5);
+}
+
+/* clover 3 */
+@keyframes rolling-left-right-left { 
+    0% { 
+        transform: translateX(10px) rotate(0turn);
+    } 
+    100% {
+        transform: translateX(1000px) rotate(3turn);
+    }
+}
+
+#clover3 { 
+    width: 100px;
+    animation-name: rolling-left-right-left; 
+    animation-duration: 5s; 
+    animation-timing-function: ease-in-out; 
+    animation-iteration-count: 2; 
+    animation-delay: 1s;
+
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+
+}
+
+/* clover 4 */
+#cloverFourLeaves{
+    transform: scale(0.2);
+}
+
+#cloverFourLeaves {
+    transition: 2s;
+}
+
+#cloverFourLeaves:hover{
+    transform: scale(0.3);
+}
+
+#cloverTop:hover #cloverTopRect, 
+#cloverTop:hover #cloverTopCircle2, 
+#cloverTop:hover #cloverTopCircle1{
+    fill: #ffc;   
+}
+
+#cloverLeft:hover #cloverLeftRect, 
+#cloverLeft:hover #cloverLeftCircle1, 
+#cloverLeft:hover #cloverLeftCircle2{
+    fill: #fcf;
+}
+#cloverBottom:hover #cloverBottomRect, 
+#cloverBottom:hover #cloverBottomCircle1, 
+#cloverBottom:hover #cloverBottomCircle2{
+    fill: #cff;
+}
+#cloverRight:hover #cloverRightRect, 
+#cloverRight:hover #cloverRightCircle1, 
+#cloverRight:hover #cloverRightCircle2{
+    fill: #ccf;
+}
